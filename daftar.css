@@ -8,7 +8,7 @@
 }
 
 body {
-    background: url(yeriback.png);
+    background: url(yeriback2.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -92,7 +92,7 @@ header {
     text-align: center;
     padding: 10px 0 30px 0;
 }
-.input-field{
+.input-field, .select-box{
     font-size: 15px;
     background: rgba(255, 255, 255, 0.2);
     color: #fff;
@@ -103,6 +103,11 @@ header {
     border: none;
     outline: none;
     transition: .2s ease;
+}
+option{
+    position: absolute;
+    color: black;
+    border-radius: 20px;
 }
 .input-field:hover, .input-field:focus{
     background: rgba(255, 255, 255, 0.25);
@@ -152,3 +157,90 @@ header {
 .two label a:hover{
     text-decoration: underline;
 }
+
+.todo-wrapper{
+    margin-top: 50px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 25px;
+    font-weight: 250;
+    text-align: center;
+    width: fit-content;
+}
+
+.todo-wrapper h1{
+    font-weight: bold;
+    margin: 0;
+    color: black;
+    text-align: center;
+}
+
+.todo-wrapper p{
+    font-style: italic;
+    color: black;
+    margin: 5px 0;
+    text-align: center;
+}
+
+.todo-wrapper ol{
+    margin: 20px 0;
+}
+
+.todo-wrapper ol li{
+    margin: 5px 15px;
+    padding: 3px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+}
+
+.todo-wrapper ol li:nth-child(even) {
+    background:rgba(255, 255, 255, 0.25);
+}
+
+.todo-wrapper .completed {
+    text-decoration: line-through;
+    color: #5c5c78;
+}
+
+.todo-wrapper form{
+    display: inline-block;
+}
+
+.todo-wrapper input{
+    padding: 5px 15px;
+    border-radius: 10px;
+    border: none;
+    height: 32px;
+    width: 300px;
+    margin-top: 10px;
+    background-color: aliceblue;
+}
+
+.pretty-button{
+    margin: 5px 5px;
+    padding: 5px 20px;
+    color: black;
+    font-size: medium;
+    border: none;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+.pretty-button:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+#control-wrapper{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+

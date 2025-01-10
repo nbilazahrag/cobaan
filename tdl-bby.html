@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="daftar.css">
+    <title>BBY | To Do List</title>
+</head>
+<body>
+    <div class="wrapper">
+        <nav class="nav">
+            <div class="nav-logo">
+                <p>BBY.</p>
+            </div>
+            <div class="nav-menu">
+                <ul>
+                    <li><a href="#" class="link">Home</a></li>
+                    <li><a href="#" class="link active">Daftar</a></li>
+                    <li><a href="#" class="link">Tentang BBY.</a></li>
+                    <li><a href="#" class="link">Menu Bukber</a></li>
+                </ul>
+            </div>
+            <div class="nav-button">
+                <button class="btn" id="loginBTN">Daftar</button>
+            </div>
+            <div class="nav-menu-btn">
+                <i class="bx bx-menu"></i>
+            </div>
+        </nav>
+        
+        <!--todolist-->
+        <div class="todo-wrapper">
+            <h1>To Do List Bukber
+                <span><i class="bx bxs-book-heart"></i></span>
+            </h1>
+            <p>Double-click an item to mark it complete.</p>
+            <form name="todo-adder">
+                <input type="text" id="todo-entry-box">
+            </form>
+            <button id="add-button" class="pretty-button">Add</button>
+            <br>
+            <ol id="todo-list">
+            </ol>
+            <div id="control-wrapper">
+                <button id="clear-completed-button" onclick="clearCompletedToDoItems()" class="pretty-button">Clear Completed</button>
+                <button id="empty-button" onclick="emptyList()" class="pretty-button">Empty List</button>
+                <button id="save-button" onclick="saveList()" class="pretty-button">Save List</button>
+            </div>
+            </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
